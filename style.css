@@ -13,7 +13,29 @@ html,body{
 	height:70vh;
 }
 
-@media(max-width: 2000px){}
+@media(max-width: 632px){
+	#welcome-section{
+	display:flex;
+	flex-direction:column;
+	padding: 250px;
+	text-align: center;
+	font-size:25px;
+	background:#CCFFFF;
+	height: 70vh;
+}
+	#project-section{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+img{
+	width:250px;
+	height:200px;
+	border:1px solid #000;
+	border-radius: 5px;
+}
+}
 /*Navbar*/
 #navbar{
 	display: flex;
@@ -123,5 +145,4 @@ img{
 	padding:30px;
 	background: linear-gradient(to right,#0C11A4,#620CA4,#CE0F82);
 	color:#fff;
-}
 }
