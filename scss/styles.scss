@@ -90,7 +90,6 @@ nav {
 
 // About section
 #about-content {
-    margin: 0 8% 5% 0;
     text-align: justify;
 }
 
@@ -176,6 +175,9 @@ nav {
 
     aside {
         .contact-detail {
+            p{
+                width: 120%;
+            }
             i {
                 color: $primary-color;
                 border: 1px solid $primary-color;
@@ -186,8 +188,10 @@ nav {
         }
         .social-icons {
             margin: 20px 10px 10px 0;
+            text-align: center;
 
             i {
+                margin: 10px 15px;
                 color: $primary-color;
                 border: 1px solid $primary-color;
                 border-radius: 50%;
@@ -277,9 +281,6 @@ footer{
             grid-row: 2 / 3;
 
             .contact-detail {
-                p{
-                    width: 120%;
-                }
                 i {
                     color: $primary-color;
                     border: 1px solid $primary-color;
