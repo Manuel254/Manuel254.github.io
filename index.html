@@ -1,73 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Portfolio | I.N.K</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.N.K</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<!-- Navbar -->
-	<nav id="navbar">
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#projects">My Projects</a></li>
-			<li><a href="#contacts">Contacts</a></li>
-		</ul>
-	</nav>
-	<main>
+     <nav>
+         <button class="hamburger" id="hamburger">
+             <i class="fas fa-bars"></i>
+         </button>
+        <ul id="nav-ul">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="about">
+            <!-- My header -->
+            <header>
+                <!-- Logo -->
+                <h3 class="logo">Immanuel Kituku</h3>
+                <small>An Intermediate Python Programmer and a Full Stack Web Developer</small>
+            </header>
+            <!-- About Me -->
+            <h1>About</h2>
+            <section id="about-content">
+                <p><span>Hi 👋</span>I am a Immanuel, third year student at South Eastern Kenya University, Kitui, Kenya currently  
+                        pursuing a degree in Computer Science. I am passionate in programming and would like 
+                        to achieve a lot from it. There are many programming languages that I would love to 
+                        learn but I have dedicated most of my time to learning python so as to dive into the 
+                        machine learning path and I also do web development as a freelance. My programming 
+                        journey has been good though have faced many challenges but those are what 
+                        keep me going. I am positive someday that I would become a seasoned developer. My 
+                        hobbies are programming, playing basketball, reading and playing musical instruments 
+                        such as the guitar and piano. I also  love to teach other people programming as it keeps 
+                        me on toes.</p>
+                <img src="img/me.png" alt="my-image">
+            </section>
+        </div>
+        <div id="skills">
+            <h1>Skills</h1>
+            <p>These are skills that I have gained over the years.</p>
+            <div class="skill-section">
+                <div class="skill-card">
+                    <h3 class="card-title">Frontend</h3>
+                    <i class="fas fa-laptop"></i>
+                    <ul class="card-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="card-title">Backend</h3>
+                    <i class="fas fa-cogs"></i>
+                    <ul class="card-list">
+                        <li>PHP</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="card-title">Programming languages</h3>
+                    <i class="fas fa-code"></i>
+                    <ul class="card-list">
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="card-title">Design</h3>
+                    <i class="fas fa-palette"></i>
+                    <ul class="card-list">
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>XD</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Contacts-->
+        <div id="contacts">
+            <h1>Contacts</h1>
+            <section>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="Enter full name">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="phone"></label>
+                        <input type="phone" name="phone" placeholder="Phone number">
+                    </div>
+                    <div>
+                        <label for="subject"></label>
+                        <input type="text" name="subject" placeholder="Your subject">
+                    </div>
+                    <div>
+                        <label for="message"></label>
+                        <textarea name="message" cols="20" rows="10" placeholder="Your Message..."></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-submit" name="submit">
+                </form>
+            </section>
+            <!-- Social Media Contacts -->
+            <aside>
+                <!-- Location and contact details -->
+                <div class="contact-detail">
+                    <p><i class="fas fa-phone"></i> +254 703103690</p>
+                    <p><i class="fas fa-envelope"></i> Immanuelkituku@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    </div>
+                <div class="social-icons">
+                    <a href="https://github.com/Manuel254" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B254703103690&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/ManuelTechs" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://web.facebook.com/ManuelTechs/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https:twitter.com/ManuelTechs/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </aside>
+        </div> 
+    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2020 Designed with 🤍 by Immanuel Kituku 
+    </footer>
 
-	<!-- About section -->
-	<div id="about">
-	<section id="welcome-section">
-		<h1 class="heading-one">WELCOME TO MY PORTFOLIO</h1>
-		<p class="text-primary">Hi! I'm Immanuel. A Front end web developer. I have vast knowledge of HTML and CSS.</p>
-	</section>
-		</div>
-		
-	<!-- Projects Section -->
-	<div id="projects">
-	<div class="heading-two"><h2>These are some of my projects</h2></div>
-	<section id="project-section">
-		<div class="project-tile">
-			<div class="project-title">Documentation Page</div>
-			<a href="https://codepen.io/MANUEL254/pen/wbpMZZ" target="_blank">
-			<img class="img" src="https://github.com/Manuel254/Documentation-Page/blob/master/Documentation_page.PNG?raw=true" alt="Documentation page project">
-		</a>
-		</div>
-		<div class="project-tile">
-			<div class="project-title">Tribute Page</div>
-			<a href="https://codepen.io/MANUEL254/pen/JqNKLp" target="_blank">
-			<img class="img" src="https://github.com/Manuel254/Tribute-page/blob/master/Tribute.PNG?raw=true" alt="Tribute page project">
-		</a>
-		</div>
-		<div class="project-tile">
-			<div class="project-title">Project landing Page</div>
-			<a href="https://codepen.io/MANUEL254/pen/JqOWoR" target="_blank">
-			<img class="img" src="https://github.com/Manuel254/Product-landing-page/blob/master/Product_landing.PNG?raw=true" alt="Product landing page project">
-		</a>
-		</div>
-		<div class="project-tile">
-			<div class="project-title">Survey Form</div>
-			<a href="https://codepen.io/MANUEL254/pen/ZNKdjp" target="_blank">
-			<img class="img" src="https://github.com/Manuel254/Survey-Form/blob/master/survey.PNG?raw=true" alt="Survey project">
-		</a>
-		</div>
-	</section>
-		</div>
-
-	<!-- Contacts Section -->
-	<div class="heading-two-primary"><h2>Contacts Info</h2></div>
-	<section id="contacts">
-		<a href="https://www.facebook.com/manuella.crops" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
-		<a href="https://gmail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
-		<a id="profile-link" href="https://github.com/Manuel254" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-		<a href="(787)-0731-9992" target="_blank"><i class="fa fa-phone fa-3x"></i></a>
-	</section>
-	</main>
-
-	<!-- Footer -->
-	<footer id="footer">
-		&copy; Immanuel Kituku, All rights Reserved.
-	</footer>
+    <script src="https://kit.fontawesome.com/bf257a5746.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
