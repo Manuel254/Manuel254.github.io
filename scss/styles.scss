@@ -7,6 +7,10 @@
     padding:0;
 }
 
+html {
+    scroll-behaviour: smooth;
+}
+
 body{
     font-family: $font;
     line-height: 1.6;
