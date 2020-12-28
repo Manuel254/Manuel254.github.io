@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 </head>
 <body>
      <nav>
@@ -87,6 +88,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- Projects -->
+        <div id="projects">
+            <h1>Projects</h1>
+            <p>You can check out my projects on github... <a href="https://github.com/Manuel254" target="_blank"><i class="fab fa-github"></i></a></p><br>
+            <div class="calendar">
+                My github calendar
+            </div>
+            <small class="calendar-caption">My github calendar</small>
+        </div>
         <!--Contacts-->
         <div id="contacts">
             <h1>Contacts</h1>
@@ -139,7 +150,12 @@
         &copy; 2020 Designed by Immanuel Kituku. 
     </footer>
 
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/master/dist/github-calendar.min.js"></script>
     <script src="https://kit.fontawesome.com/bf257a5746.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script>
+        GitHubCalendar(".calendar", "Manuel254");
+        GitHubCalendar(".calendar", "Manuel254", { responsive: true });
+    </script>
 </body>
 </html>
